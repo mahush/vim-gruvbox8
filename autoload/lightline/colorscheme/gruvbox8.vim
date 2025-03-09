@@ -1,4 +1,5 @@
-if &background ==# 'dark'
+
+if &background ==# 'light'
   let s:bg0 = [ '#282828', 235 ]
   let s:bg1 = [ '#3c3836', 237 ]
   let s:bg2 = [ '#504945', 239 ]
@@ -19,9 +20,9 @@ if &background ==# 'dark'
   let s:p.normal.right  = [ [ s:bg0, s:fg4 ], [ s:fg4, s:bg2 ] ]
   let s:p.normal.middle = [ [ s:fg4, s:bg1 ] ]
 
-  let s:p.inactive.left   = [ [ s:bg4, s:bg1 ], [ s:bg4, s:bg1 ] ]
-  let s:p.inactive.right  = [ [ s:bg4, s:bg1 ], [ s:bg4, s:bg1 ] ]
-  let s:p.inactive.middle = [ [ s:bg4, s:bg1 ] ]
+  let s:p.inactive.left   = [ [ s:fg4, s:fg1 ], [ s:fg4, s:fg1 ] ]
+  let s:p.inactive.right  = [ [ s:fg4, s:fg1 ], [ s:fg4, s:fg1 ] ]
+  let s:p.inactive.middle = [ [ s:fg4, s:fg1 ] ]
 
   let s:p.insert.left   = [ [ s:bg0, s:blue, 'bold' ], [ s:fg1, s:bg2 ] ]
   let s:p.insert.right  = [ [ s:bg0, s:blue ], [ s:fg1, s:bg2 ] ]
@@ -39,10 +40,10 @@ if &background ==# 'dark'
   let s:p.visual.right  = [ [ s:bg0, s:orange ], [ s:bg0, s:bg4 ] ]
   let s:p.visual.middle = [ [ s:fg4, s:bg1 ] ]
 
-  let s:p.tabline.left   = [ [ s:fg4, s:bg2 ] ]
-  let s:p.tabline.right  = [ [ s:bg0, s:orange ] ]
-  let s:p.tabline.middle = [ [ s:bg0, s:bg4 ] ]
-  let s:p.tabline.tabsel = [ [ s:bg0, s:fg4 ] ]
+  let s:p.tabline.left   = [ [ s:fg4, s:fg1 ] ]
+  let s:p.tabline.right  = [ [ s:fg4, s:fg1 ] ]
+  let s:p.tabline.middle = [ [ s:fg4, s:fg1 ] ]
+  let s:p.tabline.tabsel = [ [ s:fg4, s:bg1 ] ]
 
   let s:p.normal.error   = [ [ s:bg0, s:orange ] ]
   let s:p.normal.warning = [ [ s:bg2, s:yellow ] ]
@@ -50,7 +51,7 @@ if &background ==# 'dark'
   let g:lightline#colorscheme#gruvbox8#palette = lightline#colorscheme#flatten(s:p)
 endif
 
-if &background ==# 'light'
+if &background ==# 'dark'
   let s:bg0 = [ '#fbf1c7', 230 ]
   let s:bg1 = [ '#ebdbb2', 187 ]
   let s:bg2 = [ '#d5c4a1', 187 ]
@@ -71,9 +72,9 @@ if &background ==# 'light'
   let s:p.normal.right  = [ [ s:bg0, s:fg4 ], [ s:fg4, s:bg2 ] ]
   let s:p.normal.middle = [ [ s:fg4, s:bg1 ] ]
 
-  let s:p.inactive.left   = [ [ s:bg4, s:bg1 ], [ s:bg4, s:bg1 ] ]
-  let s:p.inactive.right  = [ [ s:bg4, s:bg1 ], [ s:bg4, s:bg1 ] ]
-  let s:p.inactive.middle = [ [ s:bg4, s:bg1 ] ]
+  let s:p.inactive.left   = [ [ s:fg4, s:fg1 ], [ s:fg4, s:fg1 ] ]
+  let s:p.inactive.right  = [ [ s:fg4, s:fg1 ], [ s:fg4, s:fg1 ] ]
+  let s:p.inactive.middle = [ [ s:fg4, s:fg1 ] ]
 
   let s:p.insert.left   = [ [ s:bg0, s:blue, 'bold' ], [ s:fg1, s:bg2 ] ]
   let s:p.insert.right  = [ [ s:bg0, s:blue ], [ s:fg1, s:bg2 ] ]
@@ -91,10 +92,10 @@ if &background ==# 'light'
   let s:p.visual.right  = [ [ s:bg0, s:orange ], [ s:bg0, s:bg4 ] ]
   let s:p.visual.middle = [ [ s:fg4, s:bg1 ] ]
 
-  let s:p.tabline.left   = [ [ s:fg4, s:bg2 ] ]
-  let s:p.tabline.right  = [ [ s:bg0, s:orange ] ]
-  let s:p.tabline.middle = [ [ s:bg0, s:bg4 ] ]
-  let s:p.tabline.tabsel = [ [ s:bg0, s:fg4 ] ]
+  let s:p.tabline.left   = [ [ s:fg4, s:fg1 ] ]
+  let s:p.tabline.right  = [ [ s:fg4, s:fg1 ] ]
+  let s:p.tabline.middle = [ [ s:fg4, s:fg1 ] ]
+  let s:p.tabline.tabsel = [ [ s:fg4, s:bg1 ] ]
 
   let s:p.normal.error   = [ [ s:bg0, s:orange ] ]
   let s:p.normal.warning = [ [ s:bg2, s:yellow ] ]
